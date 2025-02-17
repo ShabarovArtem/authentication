@@ -1,6 +1,5 @@
 const jwt = require("jsonwebtoken");
 const {secret} = require("../config");
-//простая функция, req - запрос, res - ответ, next - функция, которая по цепочке вызывает следущий middleware
 module.exports = function(req, res, next) {
     if (req.method === 'OPTIONS') {
         next();
